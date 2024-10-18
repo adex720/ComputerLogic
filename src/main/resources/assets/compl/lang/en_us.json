@@ -1,4 +1,6 @@
 {
+  "item.compl.transistor": "Transistor",
+
   "block.compl.logic_gate_not": "NOT Gate",
   "block.compl.logic_gate_and": "AND Gate",
   "block.compl.logic_gate_nand": "NAND Gate",

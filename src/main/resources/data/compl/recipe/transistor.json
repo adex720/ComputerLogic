@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CGC",
+    "UFU",
+    "U U"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:flint"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "U": {
+      "item": "minecraft:copper_ingot"
+    },
+    "C": {
+      "item": "minecraft:coal"
+    }
+  },
+  "result": {
+    "id": "compl:transistor",
+    "count": 2
+  }
+}
