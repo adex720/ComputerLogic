@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_transistor": {
+      "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "compl:transistor"
+            }
+          ]
+        }
+    }
+  },
+  "requirements": [
+    [
+      "has_transistor"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "compl:logic_gate_and",
+      "compl:logic_gate_nand",
+      "compl:logic_gate_nor",
+      "compl:logic_gate_not",
+      "compl:logic_gate_or",
+      "compl:logic_gate_xnor",
+      "compl:logic_gate_xor"
+    ]
+  }
+}
