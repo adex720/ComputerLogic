@@ -1,9 +1,11 @@
 package com.adex.compl.block;
 
 import com.adex.compl.block.logicgate.*;
+import com.adex.compl.item.ModItems;
 import com.adex.compl.util.Util;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
@@ -26,7 +28,7 @@ public class ModBlocks {
     public static final BlockItem LOGIC_CAGE_XNOR_ITEM = new BlockItem(LOGIC_CAGE_XNOR, new Item.Settings());
 
     /**
-     * Also registers block items
+     * Calls {@link ModBlocks#registerBlockItems()}
      */
     public static void registerBlocks() {
         Registry.register(Registries.BLOCK, Util.id("logic_cage_not"), LOGIC_CAGE_NOT);
@@ -40,6 +42,9 @@ public class ModBlocks {
         registerBlockItems();
     }
 
+    /**
+     * Calls {@link ModBlocks#addToItemGroups()}
+     */
     public static void registerBlockItems() {
         Registry.register(Registries.ITEM, Util.id("logic_cage_not"), LOGIC_CAGE_NOT_ITEM);
         Registry.register(Registries.ITEM, Util.id("logic_cage_and"), LOGIC_CAGE_AND_ITEM);
@@ -48,5 +53,17 @@ public class ModBlocks {
         Registry.register(Registries.ITEM, Util.id("logic_cage_nor"), LOGIC_CAGE_NOR_ITEM);
         Registry.register(Registries.ITEM, Util.id("logic_cage_xor"), LOGIC_CAGE_XOR_ITEM);
         Registry.register(Registries.ITEM, Util.id("logic_cage_xnor"), LOGIC_CAGE_XNOR_ITEM);
+
+        addToItemGroups();
+    }
+
+    public static void addToItemGroups() {
+        ModItems.addToItemGroup(LOGIC_CAGE_NOT_ITEM, ItemGroups.REDSTONE);
+        ModItems.addToItemGroup(LOGIC_CAGE_AND_ITEM, ItemGroups.REDSTONE);
+        ModItems.addToItemGroup(LOGIC_CAGE_NAND_ITEM, ItemGroups.REDSTONE);
+        ModItems.addToItemGroup(LOGIC_CAGE_OR_ITEM, ItemGroups.REDSTONE);
+        ModItems.addToItemGroup(LOGIC_CAGE_NOR_ITEM, ItemGroups.REDSTONE);
+        ModItems.addToItemGroup(LOGIC_CAGE_XOR_ITEM, ItemGroups.REDSTONE);
+        ModItems.addToItemGroup(LOGIC_CAGE_XNOR_ITEM, ItemGroups.REDSTONE);
     }
 }
