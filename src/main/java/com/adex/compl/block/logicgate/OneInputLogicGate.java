@@ -36,6 +36,10 @@ public abstract class OneInputLogicGate extends LogicGate {
 
     @Override
     public void updateState(World world, BlockState state, BlockPos pos) {
-        world.setBlockState(pos, state.with(INPUT, isReceivingPowerFrom(world, getInputPos(pos, state), state, state.get(FACING))));
+        BlockPos inputPos = getInputPos(pos, state);
+        boolean newValue = isReceivingPowerFrom(world, inputPos, world.getBlockState(inputPos), state.get(FACING));
+        if (newValue != state.get(INPUT)) {
+            world.setBlockState(pos, state.with(INPUT, newValue));
+        }
     }
 }
