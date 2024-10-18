@@ -1,0 +1,9 @@
+{
+  "block.compl.logic_gate_not": "NOT Gate",
+  "block.compl.logic_gate_and": "AND Gate",
+  "block.compl.logic_gate_nand": "NAND Gate",
+  "block.compl.logic_gate_or": "OR Gate",
+  "block.compl.logic_gate_nor": "NOR Gate",
+  "block.compl.logic_gate_xor": "XOR Gate",
+  "block.compl.logic_gate_xnor": "XNOR Gate"
+}
