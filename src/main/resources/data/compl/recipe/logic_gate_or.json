@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "C C",
+    "CTC",
+    " G "
+  ],
+  "key": {
+    "T": {
+      "item": "compl:transistor"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "id": "compl:logic_gate_or",
+    "count": 1
+  }
+}

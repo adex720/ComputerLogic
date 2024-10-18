@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "compl:logic_gate_xor"
+    },
+    {
+      "item": "compl:logic_gate_not"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "compl:logic_gate_xnor"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "CGC",
+    " T ",
+    "C C"
+  ],
+  "key": {
+    "T": {
+      "item": "compl:transistor"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "id": "compl:logic_gate_xor",
+    "count": 1
+  }
+}
