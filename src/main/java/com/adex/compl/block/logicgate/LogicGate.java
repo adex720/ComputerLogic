@@ -1,11 +1,12 @@
 package com.adex.compl.block.logicgate;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalFacingBlock;
+import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -14,6 +15,14 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public abstract class LogicGate extends HorizontalFacingBlock {
+
+    public static final Settings LOGIC_GATE_SETTINGS = AbstractBlock.Settings.create()
+            .sounds(BlockSoundGroup.METAL)
+            .strength(5.0F, 6.0F)
+            .mapColor(MapColor.IRON_GRAY)
+            .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+            .pistonBehavior(PistonBehavior.BLOCK)
+            .solidBlock(Blocks::never);
 
     public LogicGate(Settings settings) {
         super(settings);
@@ -37,7 +46,6 @@ public abstract class LogicGate extends HorizontalFacingBlock {
     public void onPlaced(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
         super.onPlaced(world, pos, state, placer, itemStack);
 
-        updateState(world, state, pos);
         update(world, pos, state);
     }
 
@@ -45,25 +53,16 @@ public abstract class LogicGate extends HorizontalFacingBlock {
     protected void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
         super.neighborUpdate(state, world, pos, sourceBlock, sourcePos, notify);
 
-        if (updateStatus(world, pos, state)) {
-            update(world, pos, state);
-        }
+        update(world, pos, state);
     }
 
     /**
-     * @return true if the state was changed
+     * @return True if the state was updated
      */
-    public boolean updateStatus(World world, BlockPos pos, BlockState state) {
-        boolean old = getOutput(state);
-        updateState(world, state, pos);
-        boolean updated = getOutput(state);
-
-        return old != updated;
-    }
-
-    public abstract void updateState(World world, BlockState state, BlockPos pos);
+    public abstract boolean updateState(World world, BlockState state, BlockPos pos);
 
     public void update(World world, BlockPos pos, BlockState state) {
+        updateState(world, state, pos);
         world.updateNeighbor(pos.offset(state.get(FACING)), this, pos);
     }
 
