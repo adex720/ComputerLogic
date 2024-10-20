@@ -62,8 +62,9 @@ public abstract class LogicGate extends HorizontalFacingBlock {
     public abstract boolean updateState(World world, BlockState state, BlockPos pos);
 
     public void update(World world, BlockPos pos, BlockState state) {
-        updateState(world, state, pos);
-        world.updateNeighbor(pos.offset(state.get(FACING)), this, pos);
+        if (updateState(world, state, pos)) {
+            world.updateNeighbor(pos.offset(state.get(FACING)), this, pos);
+        }
     }
 
     @Override

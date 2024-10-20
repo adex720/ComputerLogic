@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "compl:block/display_block_side",
+    "top": "compl:block/display_block_eleven"
+  }
+}

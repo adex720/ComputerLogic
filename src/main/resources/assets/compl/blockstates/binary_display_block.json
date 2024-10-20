@@ -1,0 +1,244 @@
+{
+  "variants": {
+    "facing=east,power=0": {
+      "model": "compl:block/binary_display_block_zero",
+      "y": 90
+    },
+    "facing=east,power=1": {
+      "model": "compl:block/binary_display_block_one",
+      "y": 90
+    },
+    "facing=east,power=2": {
+      "model": "compl:block/binary_display_block_two",
+      "y": 90
+    },
+    "facing=east,power=3": {
+      "model": "compl:block/binary_display_block_three",
+      "y": 90
+    },
+    "facing=east,power=4": {
+      "model": "compl:block/binary_display_block_four",
+      "y": 90
+    },
+    "facing=east,power=5": {
+      "model": "compl:block/binary_display_block_five",
+      "y": 90
+    },
+    "facing=east,power=6": {
+      "model": "compl:block/binary_display_block_six",
+      "y": 90
+    },
+    "facing=east,power=7": {
+      "model": "compl:block/binary_display_block_seven",
+      "y": 90
+    },
+    "facing=east,power=8": {
+      "model": "compl:block/binary_display_block_eight",
+      "y": 90
+    },
+    "facing=east,power=9": {
+      "model": "compl:block/binary_display_block_nine",
+      "y": 90
+    },
+    "facing=east,power=10": {
+      "model": "compl:block/binary_display_block_ten",
+      "y": 90
+    },
+    "facing=east,power=11": {
+      "model": "compl:block/binary_display_block_eleven",
+      "y": 90
+    },
+    "facing=east,power=12": {
+      "model": "compl:block/binary_display_block_twelve",
+      "y": 90
+    },
+    "facing=east,power=13": {
+      "model": "compl:block/binary_display_block_thirteen",
+      "y": 90
+    },
+    "facing=east,power=14": {
+      "model": "compl:block/binary_display_block_fourteen",
+      "y": 90
+    },
+    "facing=east,power=15": {
+      "model": "compl:block/binary_display_block_fifteen",
+      "y": 90
+    },
+    "facing=north,power=0": {
+      "model": "compl:block/binary_display_block_zero"
+    },
+    "facing=north,power=1": {
+      "model": "compl:block/binary_display_block_one"
+    },
+    "facing=north,power=2": {
+      "model": "compl:block/binary_display_block_two"
+    },
+    "facing=north,power=3": {
+      "model": "compl:block/binary_display_block_three"
+    },
+    "facing=north,power=4": {
+      "model": "compl:block/binary_display_block_four"
+    },
+    "facing=north,power=5": {
+      "model": "compl:block/binary_display_block_five"
+    },
+    "facing=north,power=6": {
+      "model": "compl:block/binary_display_block_six"
+    },
+    "facing=north,power=7": {
+      "model": "compl:block/binary_display_block_seven"
+    },
+    "facing=north,power=8": {
+      "model": "compl:block/binary_display_block_eight"
+    },
+    "facing=north,power=9": {
+      "model": "compl:block/binary_display_block_nine"
+    },
+    "facing=north,power=10": {
+      "model": "compl:block/binary_display_block_ten"
+    },
+    "facing=north,power=11": {
+      "model": "compl:block/binary_display_block_eleven"
+    },
+    "facing=north,power=12": {
+      "model": "compl:block/binary_display_block_twelve"
+    },
+    "facing=north,power=13": {
+      "model": "compl:block/binary_display_block_thirteen"
+    },
+    "facing=north,power=14": {
+      "model": "compl:block/binary_display_block_fourteen"
+    },
+    "facing=north,power=15": {
+      "model": "compl:block/binary_display_block_fifteen"
+    },
+    "facing=south,power=0": {
+      "model": "compl:block/binary_display_block_zero",
+      "y": 180
+    },
+    "facing=south,power=1": {
+      "model": "compl:block/binary_display_block_one",
+      "y": 180
+    },
+    "facing=south,power=2": {
+      "model": "compl:block/binary_display_block_two",
+      "y": 180
+    },
+    "facing=south,power=3": {
+      "model": "compl:block/binary_display_block_three",
+      "y": 180
+    },
+    "facing=south,power=4": {
+      "model": "compl:block/binary_display_block_four",
+      "y": 180
+    },
+    "facing=south,power=5": {
+      "model": "compl:block/binary_display_block_five",
+      "y": 180
+    },
+    "facing=south,power=6": {
+      "model": "compl:block/binary_display_block_six",
+      "y": 180
+    },
+    "facing=south,power=7": {
+      "model": "compl:block/binary_display_block_seven",
+      "y": 180
+    },
+    "facing=south,power=8": {
+      "model": "compl:block/binary_display_block_eight",
+      "y": 180
+    },
+    "facing=south,power=9": {
+      "model": "compl:block/binary_display_block_nine",
+      "y": 180
+    },
+    "facing=south,power=10": {
+      "model": "compl:block/binary_display_block_ten",
+      "y": 180
+    },
+    "facing=south,power=11": {
+      "model": "compl:block/binary_display_block_eleven",
+      "y": 180
+    },
+    "facing=south,power=12": {
+      "model": "compl:block/binary_display_block_twelve",
+      "y": 180
+    },
+    "facing=south,power=13": {
+      "model": "compl:block/binary_display_block_thirteen",
+      "y": 180
+    },
+    "facing=south,power=14": {
+      "model": "compl:block/binary_display_block_fourteen",
+      "y": 180
+    },
+    "facing=south,power=15": {
+      "model": "compl:block/binary_display_block_fifteen",
+      "y": 180
+    },
+    "facing=west,power=0": {
+      "model": "compl:block/binary_display_block_zero",
+      "y": 270
+    },
+    "facing=west,power=1": {
+      "model": "compl:block/binary_display_block_one",
+      "y": 270
+    },
+    "facing=west,power=2": {
+      "model": "compl:block/binary_display_block_two",
+      "y": 270
+    },
+    "facing=west,power=3": {
+      "model": "compl:block/binary_display_block_three",
+      "y": 270
+    },
+    "facing=west,power=4": {
+      "model": "compl:block/binary_display_block_four",
+      "y": 270
+    },
+    "facing=west,power=5": {
+      "model": "compl:block/binary_display_block_five",
+      "y": 270
+    },
+    "facing=west,power=6": {
+      "model": "compl:block/binary_display_block_six",
+      "y": 270
+    },
+    "facing=west,power=7": {
+      "model": "compl:block/binary_display_block_seven",
+      "y": 270
+    },
+    "facing=west,power=8": {
+      "model": "compl:block/binary_display_block_eight",
+      "y": 270
+    },
+    "facing=west,power=9": {
+      "model": "compl:block/binary_display_block_nine",
+      "y": 270
+    },
+    "facing=west,power=10": {
+      "model": "compl:block/binary_display_block_ten",
+      "y": 270
+    },
+    "facing=west,power=11": {
+      "model": "compl:block/binary_display_block_eleven",
+      "y": 270
+    },
+    "facing=west,power=12": {
+      "model": "compl:block/binary_display_block_twelve",
+      "y": 270
+    },
+    "facing=west,power=13": {
+      "model": "compl:block/binary_display_block_thirteen",
+      "y": 270
+    },
+    "facing=west,power=14": {
+      "model": "compl:block/binary_display_block_fourteen",
+      "y": 270
+    },
+    "facing=west,power=15": {
+      "model": "compl:block/binary_display_block_fifteen",
+      "y": 270
+    }
+  }
+}
