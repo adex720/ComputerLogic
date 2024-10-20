@@ -1,6 +1,7 @@
 package com.adex.compl.init;
 
 import com.adex.compl.block.ModBlocks;
+import com.adex.compl.gamerule.ModGameRules;
 import com.adex.compl.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -21,6 +22,8 @@ public class ComputerLogic implements ModInitializer {
         ModItems.registerItems();
 
         ModBlocks.registerBlocks();
+
+        ModGameRules.registerGameRules();
 
         LOGGER.info("Finished to initializing {}", MOD_NAME);
     }
