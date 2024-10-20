@@ -9,5 +9,7 @@
   "block.compl.logic_gate_xor": "XOR Gate",
   "block.compl.logic_gate_xnor": "XNOR Gate",
 
-  "block.compl.binary_display_block": "Binary Display Block"
+  "block.compl.binary_display_block": "Binary Display Block",
+
+  "gamerule.logicGateDelay": "Logic Gate Delay"
 }
