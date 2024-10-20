@@ -1,33 +1,33 @@
 {
   "variants": {
     "facing=east,powered=false": {
-      "model": "minecraft:block/furnace",
+      "model": "compl:block/logic_gate_not_unpowered",
       "y": 90
     },
     "facing=east,powered=true": {
-      "model": "minecraft:block/furnace_on",
+      "model": "compl:block/logic_gate_not_powered",
       "y": 90
     },
     "facing=north,powered=false": {
-      "model": "minecraft:block/furnace"
+      "model": "compl:block/logic_gate_not_unpowered"
     },
     "facing=north,powered=true": {
-      "model": "minecraft:block/furnace_on"
+      "model": "compl:block/logic_gate_not_powered"
     },
     "facing=south,powered=false": {
-      "model": "minecraft:block/furnace",
+      "model": "compl:block/logic_gate_not_unpowered",
       "y": 180
     },
     "facing=south,powered=true": {
-      "model": "minecraft:block/furnace_on",
+      "model": "compl:block/logic_gate_not_powered",
       "y": 180
     },
     "facing=west,powered=false": {
-      "model": "minecraft:block/furnace",
+      "model": "compl:block/logic_gate_not_unpowered",
       "y": 270
     },
     "facing=west,powered=true": {
-      "model": "minecraft:block/furnace_on",
+      "model": "compl:block/logic_gate_not_powered",
       "y": 270
     }
   }

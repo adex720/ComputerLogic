@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=east,powered=false,lit=false": {
+      "model": "compl:block/logic_gate_or_unpowered",
+      "y": 90
+    },
+    "facing=east,powered=false,lit=true": {
+      "model": "compl:block/logic_gate_or_right_powered",
+      "y": 90
+    },
+    "facing=east,powered=true,lit=false": {
+      "model": "compl:block/logic_gate_or_left_powered",
+      "y": 90
+    },
+    "facing=east,powered=true,lit=true": {
+      "model": "compl:block/logic_gate_or_left_and_right_powered",
+      "y": 90
+    },
+    "facing=north,powered=false,lit=false": {
+      "model": "compl:block/logic_gate_or_unpowered"
+    },
+    "facing=north,powered=false,lit=true": {
+      "model": "compl:block/logic_gate_or_right_powered"
+    },
+    "facing=north,powered=true,lit=false": {
+      "model": "compl:block/logic_gate_or_left_powered"
+    },
+    "facing=north,powered=true,lit=true": {
+      "model": "compl:block/logic_gate_or_left_and_right_powered"
+    },
+    "facing=south,powered=false,lit=false": {
+      "model": "compl:block/logic_gate_or_unpowered",
+      "y": 180
+    },
+    "facing=south,powered=false,lit=true": {
+      "model": "compl:block/logic_gate_or_right_powered",
+      "y": 180
+    },
+    "facing=south,powered=true,lit=false": {
+      "model": "compl:block/logic_gate_or_left_powered",
+      "y": 180
+    },
+    "facing=south,powered=true,lit=true": {
+      "model": "compl:block/logic_gate_or_left_and_right_powered",
+      "y": 180
+    },
+    "facing=west,powered=false,lit=false": {
+      "model": "compl:block/logic_gate_or_unpowered",
+      "y": 270
+    },
+    "facing=west,powered=false,lit=true": {
+      "model": "compl:block/logic_gate_or_right_powered",
+      "y": 270
+    },
+    "facing=west,powered=true,lit=false": {
+      "model": "compl:block/logic_gate_or_left_powered",
+      "y": 270
+    },
+    "facing=west,powered=true,lit=true": {
+      "model": "compl:block/logic_gate_or_left_and_right_powered",
+      "y": 270
+    }
+  }
+}

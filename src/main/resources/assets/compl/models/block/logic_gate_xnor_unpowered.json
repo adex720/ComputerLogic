@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "compl:block/logic_gate_side_empty",
+    "east": "compl:block/logic_gate_side_unpowered",
+    "north": "compl:block/logic_gate_side_powered",
+    "particle": "compl:block/logic_gate_side_empty",
+    "south": "compl:block/logic_gate_side_empty",
+    "up": "compl:block/logic_gate_xnor_unpowered",
+    "west": "compl:block/logic_gate_side_unpowered"
+  }
+}
