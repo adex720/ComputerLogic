@@ -29,4 +29,14 @@ public class Util {
                 startPos.getZ() + direction.getOffsetZ() * offset == goalPos.getZ();
     }
 
+    public static int min(int i, int... rest) {
+        for (int j : rest) if (j < i) i = j;
+        return i;
+    }
+
+    public static int max(int i, int... rest) {
+        for (int j : rest) if (j > i) i = j;
+        return i;
+    }
+
 }

@@ -1,5 +1,7 @@
 package com.adex.compl.block;
 
+import com.adex.compl.block.display.BinaryDisplayBlock;
+import com.adex.compl.block.display.PoweredDisplayBlock;
 import com.adex.compl.block.logicgate.*;
 import com.adex.compl.item.ModItems;
 import com.adex.compl.util.Util;
@@ -32,6 +34,13 @@ public class ModBlocks {
             .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
             .pistonBehavior(PistonBehavior.BLOCK)
             .solidBlock(Blocks::never));
+    public static final PoweredDisplayBlock POWERED_DISPLAY_BLOCK = new PoweredDisplayBlock(AbstractBlock.Settings.create()
+            .sounds(BlockSoundGroup.METAL)
+            .strength(3.0F, 3.0F)
+            .mapColor(MapColor.BROWN)
+            .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+            .pistonBehavior(PistonBehavior.BLOCK)
+            .solidBlock(Blocks::never));
 
 
     public static final BlockItem LOGIC_GATE_NOT_ITEM = new BlockItem(LOGIC_GATE_NOT, new Item.Settings());
@@ -43,6 +52,7 @@ public class ModBlocks {
     public static final BlockItem LOGIC_GATE_XNOR_ITEM = new BlockItem(LOGIC_GATE_XNOR, new Item.Settings());
 
     public static final BlockItem BINARY_DISPLAY_BLOCK_ITEM = new BlockItem(BINARY_DISPLAY_BLOCK, new Item.Settings());
+    public static final BlockItem POWERED_DISPLAY_BLOCK_ITEM = new BlockItem(POWERED_DISPLAY_BLOCK, new Item.Settings());
 
     /**
      * Calls {@link ModBlocks#registerBlockItems()}
@@ -57,6 +67,7 @@ public class ModBlocks {
         Registry.register(Registries.BLOCK, Util.id("logic_gate_xnor"), LOGIC_GATE_XNOR);
 
         Registry.register(Registries.BLOCK, Util.id("binary_display_block"), BINARY_DISPLAY_BLOCK);
+        Registry.register(Registries.BLOCK, Util.id("powered_display_block"), POWERED_DISPLAY_BLOCK);
 
         registerBlockItems();
     }
@@ -74,6 +85,7 @@ public class ModBlocks {
         Registry.register(Registries.ITEM, Util.id("logic_gate_xnor"), LOGIC_GATE_XNOR_ITEM);
 
         Registry.register(Registries.ITEM, Util.id("binary_display_block"), BINARY_DISPLAY_BLOCK_ITEM);
+        Registry.register(Registries.ITEM, Util.id("powered_display_block"), POWERED_DISPLAY_BLOCK_ITEM);
 
         addToItemGroups();
     }
@@ -88,5 +100,6 @@ public class ModBlocks {
         ModItems.addToItemGroup(LOGIC_GATE_XNOR_ITEM, ItemGroups.REDSTONE);
 
         ModItems.addToItemGroup(BINARY_DISPLAY_BLOCK_ITEM, ItemGroups.REDSTONE);
+        ModItems.addToItemGroup(POWERED_DISPLAY_BLOCK_ITEM, ItemGroups.REDSTONE);
     }
 }

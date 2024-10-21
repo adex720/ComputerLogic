@@ -10,6 +10,7 @@
   "block.compl.logic_gate_xnor": "XNOR Gate",
 
   "block.compl.binary_display_block": "Binary Display Block",
+  "block.compl.powered_display_block": "Power Display Block",
 
   "gamerule.logicGateDelay": "Logic Gate Delay"
 }

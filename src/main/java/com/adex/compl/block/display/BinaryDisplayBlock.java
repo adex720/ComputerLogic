@@ -1,4 +1,4 @@
-package com.adex.compl.block;
+package com.adex.compl.block.display;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.Block;
