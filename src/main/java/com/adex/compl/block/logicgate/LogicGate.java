@@ -83,7 +83,7 @@ public abstract class LogicGate extends HorizontalFacingBlock {
 
     @Override
     protected int getWeakRedstonePower(BlockState state, BlockView world, BlockPos pos, Direction direction) {
-        return direction == state.get(FACING).getOpposite() && getOutput(state) ? 15 : 0;
+        return direction == getOutputDirection(state).getOpposite() && getOutput(state) ? 15 : 0;
     }
 
     @Override
