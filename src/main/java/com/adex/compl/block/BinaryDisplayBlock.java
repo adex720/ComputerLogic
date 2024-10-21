@@ -32,7 +32,7 @@ public class BinaryDisplayBlock extends HorizontalFacingBlock {
     }
 
     @Override
-    protected MapCodec<? extends HorizontalFacingBlock> getCodec() {
+    protected MapCodec<? extends BinaryDisplayBlock> getCodec() {
         return CODEC;
     }
 
